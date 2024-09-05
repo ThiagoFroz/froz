@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 
 exports.handler = async function(event, context) {
   try {
-    const response = await fetch(`https://api.netlify.com/api/v1/forms/66d91c49e0016b0008da22de/submissions`, {
+    const response = await fetch(`https://app.netlify.com/sites/thifroz/forms/66d91c49e0016b0008da22de`, {
       headers: {
         Authorization: `Bearer ${process.env.NETLIFY_API_TOKEN}`,
       },
