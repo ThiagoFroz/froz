@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback </title>
+</head>
+<body>
+    <section>
+        <div class="form_sugestoes">
+            <form name="sugestoes" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="sugestoes">
+                
+                <p>
+                  <label for="nome">Seu Nome:</label>
+                  <input type="text" name="nome" id="nome" required>
+                </p>
+                
+                <p>
+                  <label for="sugestao">Sua Sugestão:</label>
+                  <textarea name="sugestao" id="sugestao" required></textarea>
+                </p>
+                
+                <p>
+                  <button type="submit">Enviar Sugestão</button>
+                </p>
+              </form>
+        </div>
+        <div>
+            <div id="lista-sugestoes">
+                <h2>Sugestões dos Usuários</h2>
+                <ul id="sugestoes"></ul>
+              </div>
+              
+              <script>
+                async function carregarSugestoes() {
+                  const response = await fetch('/.netlify/functions/get-suggestions');
+                  const sugestoes = await response.json();
+                  
+                  const listaSugestoes = document.getElementById('sugestoes');
+                  listaSugestoes.innerHTML = '';
+              
+                  sugestoes.forEach(sugestao => {
+                    const li = document.createElement('li');
+                    li.textContent = `${sugestao.nome}: ${sugestao.sugestao}`;
+                    listaSugestoes.appendChild(li);
+                  });
+                }
+              
+                // Carregar sugestões assim que a página for carregada
+                window.onload = carregarSugestoes;
+              </script>
+        </div>
+    </section>
+
+</body>
+</html>
