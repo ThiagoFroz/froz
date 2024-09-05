@@ -14,3 +14,4 @@ async function carregarSugestoes() {
   
   // Carregar sugestões quando a página é carregada
   window.onload = carregarSugestoes;
+  

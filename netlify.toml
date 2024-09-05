@@ -3,5 +3,5 @@
 
 [[redirects]]
   from = "/sugestoes"
-  to = "/sugestoes.html"
+  to = "/pages/sugestoes.html"
   status = 200
