@@ -1,110 +1,130 @@
-/* Reset básico para margens e padding */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Definindo a fonte padrão e o background */
+/* Corpo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    margin: 0;
 }
 
-/* Estilizando o cabeçalho */
+/* Estilos do Cabeçalho */
 header {
     background-color: #036a92;
     color: white;
+    padding: 2em 0;
     text-align: center;
-    padding: 1em 0;
+    position: relative;
+}
+
+.logo img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 50px;
 }
 
 header h1 {
+    font-size: 2.5em;
     margin-bottom: 0.5em;
 }
 
 header p {
     font-size: 1.2em;
+    margin-bottom: 1.5em;
 }
 
-/* Estilizando as seções */
+/* Botões de Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav button {
+    background-color: #014058;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #036a92;
+}
+
+/* Seções */
 section {
-    padding: 2em 1em;
-    margin: 0 auto; /* Adiciona uma margem automática para centralizar o conteúdo */
     background-color: white;
+    padding: 2em;
+    margin: 2em auto;
     border-radius: 8px;
+    width: 90%;
+    max-width: 1000px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Ajustando o padding para garantir que o conteúdo não fique encostado na borda da tela */
-@media (min-width: 600px) {
-    section {
-        padding: 2em 2em;
-    }
-}
-
-@media (max-width: 599px) {
-    section {
-        padding: 1em;
-    }
-}
-
 section h2 {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     color: #014058;
+    font-size: 2em;
+    text-align: center;
 }
 
 section p {
+    font-size: 1.1em;
+    color: #333;
+    text-align: center;
     margin-bottom: 1em;
 }
 
-/* Estilizando links */
-a {
-    color: #006f9b;
-    text-decoration: none;
+section#sobre-mim {
+    background-color: #f4faff;
 }
 
-a:hover {
+section#contato ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+section#contato ul li {
+    margin-bottom: 1em;
+}
+
+section#contato ul li a {
+    color: #036a92;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+section#contato ul li a i {
+    margin-right: 10px;
+}
+
+section#contato ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilizando a lista de contatos */
-ul {
-    list-style: none;
-}
-
-ul li {
-    margin-bottom: 0.5em;
-}
-
-/* Estilizando o rodapé */
+/* Rodapé */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 1.5em 0;
 }
 
 footer p {
-    margin-bottom: 0.5em;
-}
-
-footer button {
-    background-color: #036a92;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-footer button:hover {
-    background-color: #5c82f5;
+    font-size: 0.9em;
+    margin: 0;
 }

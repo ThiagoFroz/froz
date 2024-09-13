@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #036a92;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+header button {
+    background-color: white;
+    color: #036a92;
+    border: 2px solid #036a92;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header button:hover {
+    background-color: #036a92;
+    color: white;
+}
+
+/* Formulário */
+main {
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #014058;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #036a92;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #036a92;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #014058;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+footer p {
+    font-size: 0.9em;
+}

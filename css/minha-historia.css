@@ -1,0 +1,128 @@
+/* Reset básico para margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    background-color: #036a92;
+    color: white;
+    padding: 1em 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 1em;
+}
+
+nav button {
+    background-color: #014058;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: #036a92;
+}
+
+/* Layout container para o conteúdo principal e anúncios */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Estilizando o bloco de notas */
+#bloco-de-notas {
+    width: 60%;
+}
+
+.notepad {
+    background-color: #fffecf;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: #014058;
+}
+
+/* Efeito de linhas no bloco de notas */
+.notepad::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 24px,
+        #036a92 25px
+    );
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.notepad h2 {
+    text-align: center;
+    color: #014058;
+    margin-bottom: 1em;
+    font-size: 1.6em;
+}
+
+/* Estilizando os anúncios */
+#anuncios {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#anuncios h3 {
+    color: #014058;
+    margin-bottom: 10px;
+}
+
+.ad {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+    position: relative;
+}

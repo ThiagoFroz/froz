@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Froz</title>
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+        <nav>
+            <button onclick="window.location.href='../index.html'">Início</button>
+            <button onclick="window.location.href='minha-historia.html'">Minha História</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contato-form">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo para entrar em contato comigo. Vou responder o mais rápido possível!</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <aside id="informacoes-contato">
+            <h3>Outras formas de contato</h3>
+            <ul>
+                <li><a href="mailto:thifroz@gmail.com"><i class="fas fa-envelope"></i> thifroz@gmail.com</a></li>
+                <li><a href="https://wa.me/5592988392901" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                <li><a href="https://www.instagram.com/thifroz" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Froz. Use o que quiser, só me dê crédito!</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

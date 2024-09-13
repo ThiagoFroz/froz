@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sugestões</title>
+    <title>Sugestões de Melhorias</title>
+    <link rel="stylesheet" href="../css/style-sugestoes.css">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>Sugestões de Melhorias</h1>
-        <!-- Link para voltar à página inicial -->
         <a href="../index.html">
             <button type="button">Voltar para a Página Inicial</button>
         </a>
     </header>
 
     <main>
-        <!-- Formulário para enviar novas sugestões -->
-        <h2>Envie sua sugestão</h2>
+        <h2>Envie sua Sugestão</h2>
         <form name="sugestoes" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="sugestoes">
-            <p>
+            <div class="form-group">
                 <label for="nome">Seu Nome:</label>
-                <input type="text" name="nome" id="nome" required>
-            </p>
-            <p>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
                 <label for="sugestao">Sua Sugestão:</label>
-                <textarea name="sugestao" id="sugestao" required></textarea>
-            </p>
-            <p>
-                <button type="submit">Enviar Sugestão</button>
-            </p>
+                <textarea name="sugestao" id="sugestao" rows="6" placeholder="Digite sua sugestão" required></textarea>
+            </div>
+            <button type="submit">Enviar Sugestão</button>
         </form>
-
     </main>
 
-
+    <footer>
+        <p>&copy; 2024 Froz. Obrigado por sua contribuição!</p>
+    </footer>
 </body>
 </html>

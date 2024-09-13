@@ -1,0 +1,152 @@
+/* Reset básico para margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    background-color: #036a92;
+    color: white;
+    padding: 1em 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 1em;
+}
+
+nav button {
+    background-color: #014058;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: #036a92;
+}
+
+/* Estilizando a seção principal */
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    gap: 20px;
+}
+
+#contato-form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+#contato-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #036a92;
+}
+
+#contato-form p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #014058;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #036a92;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+button:hover {
+    background-color: #014058;
+}
+
+/* Barra lateral com informações de contato */
+#informacoes-contato {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#informacoes-contato h3 {
+    color: #014058;
+    margin-bottom: 15px;
+}
+
+#informacoes-contato ul {
+    list-style: none;
+    padding: 0;
+}
+
+#informacoes-contato ul li {
+    margin-bottom: 15px;
+}
+
+#informacoes-contato ul li a {
+    text-decoration: none;
+    color: #036a92;
+    font-size: 18px;
+}
+
+#informacoes-contato ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
